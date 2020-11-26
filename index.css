@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Mobile */
+body {
+    display: flex;
+    max-width: 1440px;
+    height: 100vh;
+    background-color: rgb(21, 199, 199);
+    letter-spacing: 1.3px;
+}
+
+#img1 .img1 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 0px;
+    top: 0px;
+}
+
+#img2 .img2 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr 2fr;
+    grid-template-areas: 
+        "c c c"
+        "v v v"
+        "who who who"
+        "att att2 att3";
+    max-width: 350px;
+    height: 400px;
+    margin: auto auto;
+    background-color: whitesmoke;
+    z-index: 1;
+    border-radius: 18px;
+    box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, 0.658);
+}
+
+
+/*CARD*/
+.c {
+    grid-area: c;
+    column-span: 3;
+}
+
+.card {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+/*USER*/
+.v {
+    grid-area: v;
+    justify-self: center;
+    margin-top: -12%;
+}
+
+.who {
+    grid-area: who;
+    justify-self: center;
+}
+
+.who span {
+    color: rgb(68, 68, 68);
+}
+
+/*ATTRIBUTES*/
+.at {
+    padding: 12px;
+}
+
+.at span {
+    font-weight: 200;
+    color: rgb(68, 68, 68);
+}
+
+.att {
+    grid-area: att;
+    justify-self: center;
+    text-align: center;
+}
+
+.att2 {
+    grid-area: att2;
+    justify-self: center;
+    text-align: center;
+}
+
+.att3 {
+    grid-area: att3;
+    justify-self: center;
+    text-align: center;
+}
+
+/*MOBILE*/
+@media only screen and (min-width: 480px) {
+
+    .container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr;
+        grid-template-areas: 
+            "c c c"
+            "v v v"
+            "who who who"
+            "att att2 att3";
+        max-width: 350px;
+        height: 400px;
+        margin: auto auto;
+        background-color: whitesmoke;
+        z-index: 1;
+        border-radius: 18px;
+        box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, 0.658);
+    }
+}
