@@ -48,7 +48,7 @@ body {
     background-color: whitesmoke;
     z-index: 1;
     border-radius: 18px;
-    box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, 0.658);
+    box-shadow: 5px 5px 0.25px 3px rgba(0, 0, 0, 0.658);
 }
 
 
@@ -126,6 +126,6 @@ body {
         background-color: whitesmoke;
         z-index: 1;
         border-radius: 18px;
-        box-shadow: 5px 5px 5px 6px rgba(0, 0, 0, 0.658);
+        box-shadow: 5px 5px 0.25px 3px rgba(0, 0, 0, 0.658);
     }
 }
